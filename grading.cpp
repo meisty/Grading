@@ -11,7 +11,7 @@ int main()
     int score;
     cin >> score;
 
-    if (score > 100 || score < 0){
+    if (score > 100 || score <= 0){
         cout << "You have entered an invalid score, please try again \n";
     }else{
         if (score == 100){
@@ -24,7 +24,7 @@ int main()
             cout << "You have achieved a grade     C \n";
         }else if(score >=60 && score < 70){
             cout << "You have achieved a grade     D \n";
-        }else if(score < 59){
+        }else if(score <= 59){
             cout << "You have achieved a grade     F \n";
         }
     }
